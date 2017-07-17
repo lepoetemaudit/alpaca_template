@@ -14,6 +14,7 @@ and you'll have to build Alpaca yourself from master, e.g.
     $ git clone https://github.com/alpaca-lang/alpaca.git &&\
           cd alpaca && rebar3 compile && bash make-release.sh &&\
           cd alpaca-unversioned && export ALPACA_ROOT=$PWD
+    
 
 Build
 -----
