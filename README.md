@@ -8,13 +8,17 @@ and ensuring your `ALPACA_ROOT` enviromental variable is set, e.g.
 
     $ export ALPACA_ROOT=~/alpaca
 
-However, Currently this template uses a branch of the rebar3 plugin 
+However, currently this template uses a branch of the rebar3 plugin 
 and you'll have to build Alpaca yourself from master, e.g.
 
     $ git clone https://github.com/alpaca-lang/alpaca.git &&\
           cd alpaca && rebar3 compile && bash make-release.sh &&\
           cd alpaca-unversioned && export ALPACA_ROOT=$PWD
     
+
+Once Alpaca 0.2.8 is released, this will no longer be necessary. The rebar
+plugin will also be available on hex.pm.
+
 
 Build
 -----
