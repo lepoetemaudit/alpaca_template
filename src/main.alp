@@ -1,0 +1,7 @@
+module main
+
+export main
+
+val main : fn () -> string
+let main () =
+  "hello world!"
