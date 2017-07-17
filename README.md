@@ -3,6 +3,17 @@ Alpaca Project Template
 
 Just clone this project and rename the files in /src as appropriate.
 
+You must have Alpaca installed. This will boil down to downloading a release
+and ensuring your `ALPACA_ROOT` enviromental variable is set, e.g.
+
+    $ export ALPACA_ROOT=~/alpaca
+
+However, Currently this template uses a branch of the rebar3 plugin 
+and you'll have to build Alpaca yourself from master, e.g.
+
+    $ git clone https://github.com/alpaca-lang/alpaca.git &&\
+          cd alpaca && rebar3 compile && bash make-release.sh &&\
+          cd alpaca-unversioned && export ALPACA_ROOT=$PWD
 
 Build
 -----
